@@ -1,0 +1,13 @@
+f = open(r"C:\Users\Malavika\PycharmProjects\pythonProject2\no")
+lines = f.readlines()
+count = 0
+prev_num = 0
+
+for i in lines:
+    num = int(i)
+    if (num > prev_num):
+        count += 1
+    prev_num = num
+
+
+print(count-1)
